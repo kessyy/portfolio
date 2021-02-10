@@ -535,6 +535,41 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.skills-container {
+  width: 100%;
+  background: rgba( 100, 161, 157, 0.00 );
+  color: #fff;
+  box-shadow: 0 8px 32px 0 #64a19d;
+  backdrop-filter: blur( 18.5px );
+  -webkit-backdrop-filter: blur( 18.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.skills {
+  border-radius: 10px;
+  text-align: right; 
+  padding-top: 0;
+  padding-bottom: 0;
+  color: white;
+}
+p .skills-container{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.html {width: 90%; background-color: #64a19d;}
+.css {width: 80%; background-color: #64a19d;}
+.js {width: 65%; background-color: #64a19d;}
+.react {width: 60%; background-color: #64a19d;}
+.res {width: 70%; background-color: #64a19d;}
+.wordpress {width: 75%; background-color: #64a19d;}
+.front {width: 80%; background-color: #64a19d;}
+.mysql {width: 65%; background-color: #64a19d;}
+.node {width: 60%; background-color: #64a19d;}
+.php {width: 50%; background-color: #64a19d;} 
+/* .progress-line.html span::after{
+  content: "90%";
+} */
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
