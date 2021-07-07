@@ -567,6 +567,7 @@ p .skills-container{
 .mysql {width: 65%; background-color: #64a19d;}
 .node {width: 60%; background-color: #64a19d;}
 .php {width: 50%; background-color: #64a19d;} 
+.ns {width: 40%; background-color: #64a19d;}
 /* .progress-line.html span::after{
   content: "90%";
 } */
@@ -1980,6 +1981,49 @@ p .skills-container{
   background-color: rgba(255, 255, 255, 0.075);
 }
 
+.gallery__image {
+	width: 100%;
+	overflow: hidden;
+	padding: 0 10px 0 10px;
+  
+}
+.gallery__image img {
+	width: 100%;
+	opacity: 0.5;
+}
+
+.gallery__image img:hover{
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+}
+.span-row {
+	grid-row: 1 / span 2;
+}
+.span-col {
+	grid-column: 2 / span 2;
+}
+@media (min-width: 1280px) {
+	.gallery__image img {
+		width: 100%;
+   }
+}
+@media (min-width: 992px) {
+	.gallery {
+		grid-template-rows: repeat(2, 250px);
+   }
+   .span-col img {
+	transform: translateY(-100px);
+}
+}
+@media (min-width: 768px) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 200px);
+		grid-gap: 10px;
+   }
+}
 @media (max-width: 575.98px) {
   .table-responsive-sm {
     display: block;
